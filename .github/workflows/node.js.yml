@@ -27,4 +27,4 @@ jobs:
     - run: npm i
     - run: npm run build --if-present
     - run: npm test
-    - run: (rm -rf /var/www/build) -and (mv ./build /var/www/)
+    - run: (Remove-Item -Recurse -Force /var/www/build) -and (mv ./build /var/www/)
